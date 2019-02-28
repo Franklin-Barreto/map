@@ -3,6 +3,6 @@
 	*ngFor="let occurrence of occurrences" [latitude]="occurrence.latitude"
 	[longitude]="occurrence.longitude"> <agm-info-window>{{occurrence.info}}</agm-info-window>
 </agm-marker> </agm-map>
-<mat-google-maps-autocomplete [addressLabelText]="['']" [country]="['ie']" [types]="['address']" [appearance]="appearance.LEGACY" (onAddressSelected)="onAddressSelected($event)"
+<mat-google-maps-autocomplete [addressLabelText]="['']" [country]="['ie']" [types]="['address']" [appearance]="appearance.OUTLINE" (onAddressSelected)="onAddressSelected($event)"
   (onLocationSelected)="onLocationSelected($event)">
 </mat-google-maps-autocomplete>
